@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Escaneo código barras
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="onScan()">Escanear</button>
+  <p *ngIf="resultado">Código escaneado: {{resultado}}</p>
+</ion-content>
